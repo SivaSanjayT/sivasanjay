@@ -1,180 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills & Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1jSiVNN-OVBIcmYTip4UATs7d-R_0aV6w/view?usp=drive_link" target="_blank" class="resume-btn">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills & Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d1jSiVNN-OVBIcmYTip4UATs7d-R0aV6w/view?usp=drivelink" target="_blank" class="resume-btn">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <video autoplay loop muted class="video-background">
-                <source src="background.mp4" type="video/mp4">
-            </video>
-            <h1>Hi there, I'm Siva Sanjay</h1>
-            <p>Game Developer with expertise in Unity and C#</p>
-            <a href="#projects" class="cta-btn">My Works</a>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <video autoplay loop muted class="video-background">
+        <source src="background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h1>Hi there, I'm Siva Sanjay</h1>
+      <p>Game Developer with expertise in Unity and C#</p>
+      <a href="#projects" class="cta-btn">My Works</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m passionate about game development and have completed a course that gave me a strong foundation in creating games. I’m quick to learn new concepts, a good listener, and enjoy diving into the details of how things work. I’m also great at communicating ideas and making sure that the work I do is clear and understandable to others. With a deep interest in gaming, I’m excited to bring my skills and enthusiasm to projects that create new and exciting experiences.
+        </p>
+      </div>
+      <!-- Optional profile image
+      <div class="about-img">
+        <img src="profile.jpg" alt="Profile Image">
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="video-wrapper">
+          <video autoplay muted loop>
+            <source src="2d-game-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <div class="para-text">
-                <p>I’m passionate about game development and have completed a course that gave me a strong foundation in creating games. I’m quick to learn new concepts, a good listener, and enjoy diving into the details of how things work. I’m also great at communicating ideas and making sure that the work I do is clear and understandable to others. With a deep interest in gaming, I’m excited to bring my skills and enthusiasm to projects that create new and exciting experiences.</p>
-                </div>
-                <div class="status">
-                    <div class="status-item">
-                        <h3>Open to Work</h3>
-                        <span class="status-indicator open">Yes</span>
-                    </div>
-                    <div class="status-item">
-                        <h3>Currently Employed</h3>
-                        <span class="status-indicator employed">Yes</span>
-                    </div>
-                </div>
-            </div>
-            <!--
-            <div class="about-img">
-                <img src="images/your-photo.jpg" alt="Your Photo">
-            </div>
-            -->
+        <h3>The Explorer</h3>
+        <p>Developed a 2D platformer game where the player must cross many hurdles and obstacles to defeat the boss and earn freedom.</p>
+        <div class="button-group">
+          <a href="https://github.com/SivaSanjayT/2DGame" target="_blank" class="btn blue-btn">View on GitHub</a>
+          <a href="https://youtu.be/54uTe1ITH50" target="_blank" class="btn blue-btn">Watch Demo</a>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <video autoplay muted loop>
-                    <source src="images/demo-video.mp4" type="video/mp4">
-                </video>
-                <h3>The Explorer</h3>
-                <p>Developed a 2D platformer game where the player must cross many hurdles and obstacles to defeat the boss and earn freedom.</p>
-                <div class="button-group">
-                    <a href="https://github.com/SivaSanjayT/2D_Game" target="_blank" class="btn blue-btn">View on GitHub</a>
-                    <a href="https://youtu.be/54uTe1ITH50" target="_blank" class="btn blue-btn">Watch Demo</a>
-                </div>
-            </div>
-            <div class="project-card" >
-                <video autoplay muted loop>
-                    <source src="images/demo-video2.mp4" type="video/mp4">
-                </video>
-                <h3>Broken Place</h3>
-                <p>Developed a 3D endless runner game where the player has to escape a continuously collapsing palace.</p>
-                <div class="button-group">
-                    <a href="https://github.com/SivaSanjayT/3D_Endless_Runner" target="_blank" class="btn blue-btn">View on GitHub</a>
-                    <a href="https://youtu.be/nbySOXS1XUM" target="_blank" class="btn blue-btn">Watch Demo</a>
-                </div>
-            </div>
-            <div class="project-card" >
-                <video autoplay muted loop>
-                    <source src="images/demo-video3.mp4" type="video/mp4">
-                </video>
-                <h3>Facility Zero</h3>
-                <p>Developed a 3D FPS game that challenges players to escape a research facility through various obstacles and puzzles.</p>
-                <div class="button-group">
-                    <a href="https://github.com/SivaSanjayT/3D_Game" target="_blank" class="btn blue-btn">View on GitHub</a>
-                    <a href="https://youtu.be/y6Q-Pk1pF6A" target="_blank" class="btn blue-btn">Watch Demo</a>
-                </div>
-            </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="video-wrapper">
+          <video autoplay muted loop>
+            <source src="3d-runner-demo.mp4" type="video/mp4" />
+          </video>
         </div>
-    </section>
-
-    <!-- Skills and Tools Section -->
-    <section id="skills" class="skills">
-        <h2>Skills & Tools</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/unity-logo.png" alt="Unity">
-                <h3>Unity</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/csharp-logo.png" alt="C#">
-                <h3>C#</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/maya-icon.png" alt="Maya">
-                <h3>Maya</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/blender-logo.png" alt="Blender">
-                <h3>Blender</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/premiere-pro-icon.png" alt="PremierePro">
-                <h3>PremierePro</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/after-effects-icon.png" alt="AfterEffects">
-                <h3>AfterEffects</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/photoshop-icon.png" alt="Photoshop">
-                <h3>Photoshop</h3>
-            </div>
-            <div class="skill-card" data-aos="fade-up">
-                <img src="images/GitHUB-icon.png" alt="GitHub">
-                <h3>GitHub</h3>
-            </div>
+        <h3>Endless Runner</h3>
+        <p>Developed a 3D endless runner game where the player has to escape a continuously collapsing palace.</p>
+        <div class="button-group">
+          <a href="https://github.com/SivaSanjayT/3DRunner" target="_blank" class="btn blue-btn">View on GitHub</a>
+          <a href="https://youtu.be/your_youtube_link" target="_blank" class="btn blue-btn">Watch Demo</a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p>Feel free to reach out to me for any collaboration or work opportunities.</p>
-            <address>
-                <p>Address: 24/72, 1st street Kamaraj colony, Kodambakkam, Chennai - 600024</p>
-                <p>Mobile: +91 7904179747</p>
-                <p>Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">www.linkedin.com/in/sivasanjayt</a></p>
-            </address>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="video-wrapper">
+          <video autoplay muted loop>
+            <source src="fps-game-demo.mp4" type="video/mp4" />
+          </video>
         </div>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <h3>FPS Research Escape</h3>
+        <p>Developed a 3D FPS game with challenging puzzles and obstacles, where players escape a complex research facility.</p>
+        <div class="button-group">
+          <a href="https://github.com/SivaSanjayT/FPSGame" target="_blank" class="btn blue-btn">View on GitHub</a>
+          <a href="https://youtu.be/your_youtube_link" target="_blank" class="btn blue-btn">Watch Demo</a>
+        </div>
+      </div>
+      <!-- Add more cards as needed. -->
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Siva Sanjay.</p>
-    </footer>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="unity-icon.png" alt="Unity" />
+        <h3>Unity</h3>
+      </div>
+      <div class="skill-card">
+        <img src="csharp-icon.png" alt="C#" />
+        <h3>C#</h3>
+      </div>
+      <div class="skill-card">
+        <img src="photoshop-icon.png" alt="Photoshop" />
+        <h3>Photoshop</h3>
+      </div>
+      <div class="skill-card">
+        <img src="blender-icon.png" alt="Blender" />
+        <h3>Blender</h3>
+      </div>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-            easing: 'ease-in-out',
-            once: true
-        });
-    </script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Feel free to reach out to me for any collaboration or work opportunities.</p>
+      <address>
+        Address: 24/72, 1st street Kamaraj colony, Kodambakkam, Chennai - 600024<br>
+        Mobile: <a href="tel:+917904179747">+91 7904179747</a><br>
+        Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a>
+      </address>
+    </div>
+    <!-- Optionally add a contact form here -->
+  </section>
+
+  <footer>
+    &copy; 2025 Siva Sanjay. All Rights Reserved.
+  </footer>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
 </body>
 </html>
