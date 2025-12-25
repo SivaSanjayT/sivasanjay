@@ -1,21 +1,13 @@
 AOS.init({ duration: 800, once: true });
 
-// Cursor Logic
+// Stealth Cursor
 const cursor = document.querySelector('.custom-cursor');
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 });
 
-// Mobile Menu Toggle
-const menu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-menu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Glitch Sync
+// Sync Glitches
 const mainName = document.getElementById('main-name');
 const forgeLogo = document.getElementById('forge-logo');
 
