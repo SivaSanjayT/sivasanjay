@@ -7,42 +7,39 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 });
 
-// Force Video Playback on Load
-window.addEventListener('load', () => {
-    const videos = document.querySelectorAll('video');
-    videos.forEach(v => {
-        v.muted = true;
-        v.play().catch(err => console.log("Autoplay blocked, user interaction needed."));
-    });
-});
+// Synced Glitch Logic
+const mainName = document.getElementById('main-name');
+const forgeLogo = document.getElementById('forge-logo');
+const silenceTitle = document.querySelector('.purple-text');
 
-// Synchronized Name & Logo Glitch
-const nameNode = document.getElementById('main-name');
-const forgeNode = document.getElementById('forge-logo');
+function triggerGlobalGlitch() {
+    mainName.classList.add('glitch-effect');
+    forgeLogo.classList.add('glitch-effect');
+    if(silenceTitle) silenceTitle.classList.add('glitch-effect');
 
-function startGlitchCycle() {
-    nameNode.classList.add('glitch-effect');
-    forgeNode.classList.add('glitch-effect');
-    
     setTimeout(() => {
-        nameNode.classList.remove('glitch-effect');
-        forgeNode.classList.remove('glitch-effect');
+        mainName.classList.remove('glitch-effect');
+        forgeLogo.classList.remove('glitch-effect');
+        if(silenceTitle) silenceTitle.classList.remove('glitch-effect');
     }, 250);
-    
-    // Cycle delay: 4 to 8 seconds
-    const nextInterval = Math.random() * 4000 + 4000;
-    setTimeout(startGlitchCycle, nextInterval);
+
+    setTimeout(triggerGlobalGlitch, Math.random() * 4000 + 4000);
 }
 
-startGlitchCycle();
+// Boot Sequence
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader-wrapper');
+    const videos = document.querySelectorAll('video');
 
-// Smooth Navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+            triggerGlobalGlitch();
+            videos.forEach(v => {
+                v.muted = true;
+                v.play().catch(e => console.log("Video Blocked"));
+            });
+        }, 800);
+    }, 2500);
 });
