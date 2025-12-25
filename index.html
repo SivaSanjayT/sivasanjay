@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siva Sanjay | Nexus Forge Studios</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <title>Siva Sanjay | Game Programmer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark-mode">
+<body class="dark-theme">
   <header>
     <nav>
-      <div class="logo">Nexus Forge<span> Studios</span></div>
+      <div class="logo">NEXUS<span>FORGE</span></div>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Missions</a></li>
         <li><a href="#skills">Tech Tree</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://drive.google.com/file/d1jSiVNN-OVBIcmYTip4UATs7d-R0aV6w/view?usp=drivelink" target="_blank" class="resume-btn">Resume</a></li>
@@ -22,67 +22,89 @@
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <div class="hero-content" data-aos="zoom-in">
-      <h1>Hi, I'm <span class="typewriter" id="typewriter"></span></h1>
-      <p>Game Programmer at HFG Entertainments</p>
-      <div class="hero-btns">
-        <a href="#projects" class="cta-btn">View My Level</a>
+  <section class="hero">
+    <div class="hero-content" data-aos="zoom-out">
+      <h1 class="glitch" data-text="Siva Sanjay">Siva Sanjay</h1>
+      <p class="subtitle">Game Programmer @ HFG Entertainments</p>
+      <div class="status-bar">
+        <span class="status-node">Level: Developer</span>
+        <span class="status-node">Goal: Dream IP Game</span>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <h2>About the Developer</h2>
-      <p>
-        I am a Game Programmer based in Perungalathur, working at HFG Entertainments. 
-        My setup features an <strong>RTX 4080</strong> and <strong>i9 14th gen</strong>, which I use to push the limits of Unity development. 
-        My mission is to build my own dream IP game under <strong>Nexus Forge Studios</strong>.
-      </p>
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container">
+      <h2>Profile_Overview</h2>
+      <p>I’m passionate about game development and building high-performance experiences. Currently working as a programmer at HFG Entertainments, I specialize in Unity and C#. My ultimate vision is to establish <strong>Nexus Forge Studios</strong> and launch original, immersive IPs.</p>
     </div>
   </section>
 
   <section id="projects" class="projects">
-    <h2 data-aos="fade-down">Current Missions</h2>
+    <h2 data-aos="fade-down">Project_Logs</h2>
     <div class="project-grid">
-      <div class="project-card" data-aos="flip-left">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
         <div class="video-wrapper">
           <video autoplay muted loop><source src="2d-game-demo.mp4" type="video/mp4"></video>
         </div>
-        <h3>The Explorer</h3>
-        <p>A 2D platformer challenging players with boss fights.</p>
-        <div class="button-group">
-          <a href="https://github.com/SivaSanjayT/2DGame" class="btn blue-btn">GitHub</a>
+        <div class="card-content">
+          <h3>The Explorer</h3>
+          <p>A 2D platformer with challenging hurdles and boss mechanics.</p>
+          <div class="btn-group">
+            <a href="https://github.com/SivaSanjayT/2DGame" class="btn">Source</a>
+            <a href="https://youtu.be/54uTe1ITH50" class="btn neon">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="video-wrapper">
+          <video autoplay muted loop><source src="3d-runner-demo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-content">
+          <h3>Endless Runner</h3>
+          <p>3D high-speed escape game featuring a collapsing palace environment.</p>
+          <div class="btn-group">
+            <a href="https://github.com/SivaSanjayT/3DRunner" class="btn">Source</a>
+            <a href="#" class="btn neon">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="video-wrapper">
+          <video autoplay muted loop><source src="fps-game-demo.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-content">
+          <h3>Research Escape</h3>
+          <p>FPS puzzle-action game set in a complex research facility.</p>
+          <div class="btn-group">
+            <a href="https://github.com/SivaSanjayT/FPSGame" class="btn">Source</a>
+            <a href="#" class="btn neon">Demo</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="skills" class="skills">
-    <h2 data-aos="fade-up">Tech Tree</h2>
+    <h2 data-aos="fade-right">Skill_Matrix</h2>
     <div class="skills-grid">
-      <div class="skill-card" data-aos="zoom-in"><h3>Unity (60%)</h3></div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100"><h3>Maya (40%)</h3></div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200"><h3>Blender (20%)</h3></div>
-      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300"><h3>C# (10%)</h3></div>
+      <div class="skill-node" data-aos="zoom-in">Unity <span>60%</span></div>
+      <div class="skill-node" data-aos="zoom-in">Maya <span>40%</span></div>
+      <div class="skill-node" data-aos="zoom-in">Blender <span>20%</span></div>
+      <div class="skill-node" data-aos="zoom-in">C# <span>10%</span></div>
     </div>
   </section>
 
-  <section id="contact" class="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
+  <footer id="contact">
+    <p>System Online: tsivasanjay@gmail.com</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/sivasanjayt">LinkedIn</a>
     </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Aura | Nexus Forge Studios. All rights reserved.
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
