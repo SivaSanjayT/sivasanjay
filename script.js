@@ -1,4 +1,4 @@
-AOS.init({ duration: 800, once: true });
+AOS.init({ duration: 400, once: true });
 
 // Stealth Cursor Logic
 const cursor = document.querySelector('.custom-cursor');
