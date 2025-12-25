@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Siva Sanjay | Nexus Forge Studios</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,6 +20,13 @@
   <header>
     <nav class="nav-container">
       <div class="logo">NEXUS<span class="forge-glitch" id="forge-logo">FORGE</span></div>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#status">Status</a></li>
@@ -73,8 +81,8 @@
           </div>
           <div class="card-info">
             <h3>The Explorer</h3>
-            <p>2D platformer featuring custom boss AI and physics logic.</p>
-            <a href="https://www.youtube.com/watch?v=54uTe1ITH50" target="_blank" class="neon-btn">WATCH DEMO</a>
+            <p>2D platformer featuring custom boss AI.</p>
+            <a href="https://youtu.be/54uTe1ITH50" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
           </div>
         </div>
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
@@ -85,8 +93,8 @@
           </div>
           <div class="card-info">
             <h3>Endless Runner</h3>
-            <p>3D high-speed escape with dynamic world destruction.</p>
-            <a href="https://www.youtube.com/watch?v=nbySOXS1XUM" target="_blank" class="neon-btn">WATCH DEMO</a>
+            <p>3D high-speed escape with dynamic destruction.</p>
+            <a href="#" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
           </div>
         </div>
         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
@@ -97,8 +105,8 @@
           </div>
           <div class="card-info">
             <h3>Research Escape</h3>
-            <p>FPS puzzle-action game with complex interaction systems.</p>
-            <a href="https://www.youtube.com/watch?v=y6Q-Pk1pF6A" target="_blank" class="neon-btn">WATCH DEMO</a>
+            <p>FPS puzzle-action with complex interaction.</p>
+            <a href="#" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
           </div>
         </div>
       </div>
@@ -108,9 +116,11 @@
       <div class="contact-box" data-aos="zoom-in">
         <div class="contact-details">
           <h2 class="section-title">Contact_Terminal</h2>
-          <p><strong>NAME:</strong> Siva Sanjay</p>
-          <p><strong>EMAIL:</strong> <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
-          <p><strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
+          <div class="contact-links">
+            <p><i class="fas fa-user"></i> Siva Sanjay</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
+          </div>
         </div>
         <form class="contact-form" action="https://formspree.io/f/mqezrzgg" method="POST">
           <input type="text" name="name" placeholder="IDENTIFY (NAME)" required>

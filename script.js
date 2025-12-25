@@ -1,45 +1,44 @@
 AOS.init({ duration: 800, once: true });
 
-// Stealth Cursor
+// Cursor Logic
 const cursor = document.querySelector('.custom-cursor');
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 });
 
-// Synced Glitch Logic
+// Mobile Menu Toggle
+const menu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Glitch Sync
 const mainName = document.getElementById('main-name');
 const forgeLogo = document.getElementById('forge-logo');
-const silenceTitle = document.querySelector('.purple-text');
 
-function triggerGlobalGlitch() {
+function triggerGlitch() {
     mainName.classList.add('glitch-effect');
     forgeLogo.classList.add('glitch-effect');
-    if(silenceTitle) silenceTitle.classList.add('glitch-effect');
-
     setTimeout(() => {
         mainName.classList.remove('glitch-effect');
         forgeLogo.classList.remove('glitch-effect');
-        if(silenceTitle) silenceTitle.classList.remove('glitch-effect');
     }, 250);
-
-    setTimeout(triggerGlobalGlitch, Math.random() * 4000 + 4000);
+    setTimeout(triggerGlitch, Math.random() * 4000 + 4000);
 }
 
 // Boot Sequence
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader-wrapper');
     const videos = document.querySelectorAll('video');
-
     setTimeout(() => {
         loader.style.opacity = '0';
         setTimeout(() => {
             loader.style.display = 'none';
-            triggerGlobalGlitch();
-            videos.forEach(v => {
-                v.muted = true;
-                v.play().catch(e => console.log("Video Blocked"));
-            });
+            triggerGlitch();
+            videos.forEach(v => { v.muted = true; v.play(); });
         }, 800);
     }, 2500);
 });
