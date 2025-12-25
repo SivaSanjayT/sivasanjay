@@ -1,4 +1,4 @@
-AOS.init({ duration: 1000 });
+AOS.init({ duration: 800, once: true });
 
 // Stealth Cursor
 const cursor = document.querySelector('.custom-cursor');
@@ -7,28 +7,42 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 });
 
-// Force Video Playback
+// Force Video Playback on Load
 window.addEventListener('load', () => {
-    const vids = document.querySelectorAll('video');
-    vids.forEach(v => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(v => {
         v.muted = true;
-        v.play().catch(() => console.log("Video waiting for interaction"));
+        v.play().catch(err => console.log("Autoplay blocked, user interaction needed."));
     });
 });
 
-// Random Glitch Controller
-const nameEl = document.querySelector('.glitch-name');
-const forgeEl = document.querySelector('.forge-glitch');
+// Synchronized Name & Logo Glitch
+const nameNode = document.getElementById('main-name');
+const forgeNode = document.getElementById('forge-logo');
 
-function triggerGlitches() {
-    if(Math.random() > 0.5) nameEl.classList.add('glitch-active');
-    if(Math.random() > 0.8) forgeEl.style.textShadow = "2px 0 #bc13fe";
+function startGlitchCycle() {
+    nameNode.classList.add('glitch-effect');
+    forgeNode.classList.add('glitch-effect');
     
     setTimeout(() => {
-        nameEl.classList.remove('glitch-active');
-        forgeEl.style.textShadow = "none";
-    }, 200);
+        nameNode.classList.remove('glitch-effect');
+        forgeNode.classList.remove('glitch-effect');
+    }, 250);
     
-    setTimeout(triggerGlitches, Math.random() * 5000 + 3000);
+    // Cycle delay: 4 to 8 seconds
+    const nextInterval = Math.random() * 4000 + 4000;
+    setTimeout(startGlitchCycle, nextInterval);
 }
-triggerGlitches();
+
+startGlitchCycle();
+
+// Smooth Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});

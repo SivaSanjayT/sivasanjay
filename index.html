@@ -13,47 +13,43 @@
 
   <header>
     <nav class="nav-container">
-      <div class="logo">NEXUS<span class="forge-glitch">FORGE</span></div>
+      <div class="logo">NEXUS<span class="forge-glitch" id="forge-logo">FORGE</span></div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Missions</a></li>
         <li><a href="#status">Status</a></li>
+        <li><a href="#projects">Missions</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="YOUR_RESUME_LINK" target="_blank" class="resume-btn">Resume</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
       <div class="hero-content">
-        <h1 class="glitch-name" data-text="SIVA SANJAY">SIVA SANJAY</h1>
+        <h1 class="glitch-name" id="main-name" data-text="SIVA SANJAY">SIVA SANJAY</h1>
         <div class="availability-highlight">● OPEN FOR WORK</div>
         <p class="subtitle">Game Programmer | Unity & C# Specialist</p>
         <p class="experience-badge">1+ Year Professional Experience</p>
       </div>
     </section>
 
-    <section id="status" class="status-section" data-aos="zoom-in">
+    <section id="status" class="status-section" data-aos="fade-up">
       <h2 class="section-title">Operational_Status</h2>
       <div class="status-grid">
-        <div class="status-item studio-node">
+        <div class="status-item">
           <span class="node-label">STUDIO ENTITY</span>
-          <h4 class="nexus-text">NEXUS <span class="forge-text">FORGE</span></h4>
+          <h4 class="white-text">NEXUS <span class="neon-text">FORGE</span></h4>
           <p>Lead Developer & Founder</p>
         </div>
-        
-        <div class="status-item current-role-node">
-          <span class="node-label">PROFESSIONAL ROLE</span>
+        <div class="status-item highlight-border">
+          <span class="node-label">CURRENT ROLE</span>
           <h4>Programmer @ HFG Entertainments</h4>
-          <p>Building <strong>Core Mechanics</strong> and <strong>System Optimization</strong> for Silence.</p>
+          <p>Optimizing Core Mechanics & Game Systems</p>
         </div>
-
-        <div class="status-item project-silence">
-          <span class="node-label">ACTIVE DEVELOPMENT</span>
-          <h4 class="silence-title">PROJECT: SILENCE</h4>
-          <div class="scanner-line"></div>
-          <p>Dream IP: Immersive environmental logic and advanced character controllers.</p>
+        <div class="status-item silence-node">
+          <span class="node-label">ACTIVE DEV</span>
+          <h4 class="purple-text">PROJECT: SILENCE</h4>
+          <p>Advanced Character Controllers & Environmental Logic</p>
         </div>
       </div>
     </section>
@@ -62,36 +58,58 @@
       <h2 class="section-title" data-aos="fade-down">Project_Logs</h2>
       <div class="project-grid">
         <div class="project-card" data-aos="fade-up">
-          <div class="video-wrapper">
+          <div class="video-container">
             <video autoplay muted loop playsinline preload="auto">
               <source src="2d-game-demo.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-body">
+          <div class="card-info">
             <h3>The Explorer</h3>
-            <p>2D platformer with boss AI mechanics.</p>
-            <a href="https://github.com/SivaSanjayT/2DGame" target="_blank" class="btn-neon">VIEW SOURCE</a>
+            <p>2D platformer featuring custom boss AI and physics logic.</p>
+            <a href="https://github.com/SivaSanjayT/2DGame" target="_blank" class="neon-btn">VIEW SOURCE</a>
           </div>
         </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="3d-runner-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-info">
+            <h3>Endless Runner</h3>
+            <p>3D high-speed escape with dynamic world destruction.</p>
+            <a href="https://github.com/SivaSanjayT/3DRunner" target="_blank" class="neon-btn">VIEW SOURCE</a>
+          </div>
         </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-container">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="fps-game-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-info">
+            <h3>Research Escape</h3>
+            <p>FPS puzzle-action game with complex interaction systems.</p>
+            <a href="https://github.com/SivaSanjayT/FPSGame" target="_blank" class="neon-btn">VIEW SOURCE</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact-section" id="contact">
-      <h2 class="section-title">Contact_Terminal</h2>
-      <div class="contact-flex-container">
-        <div class="info-block">
-          <h3>Siva Sanjay</h3>
-          <p>Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
+    <section id="contact" class="contact-section">
+      <div class="contact-box" data-aos="zoom-in">
+        <div class="contact-details">
+          <h2 class="section-title">Contact_Terminal</h2>
+          <p><strong>NAME:</strong> Siva Sanjay</p>
+          <p><strong>EMAIL:</strong> <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
+          <p><strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
         </div>
-        <div class="form-block">
-          <form action="https://formspree.io/f/your_id" method="POST">
-            <input type="text" name="name" placeholder="YOUR NAME" required>
-            <input type="text" name="subject" placeholder="SUBJECT" required>
-            <textarea name="message" placeholder="MESSAGE CONTENT" rows="4" required></textarea>
-            <button type="submit" class="glitch-btn">SEND TRANSMISSION</button>
-          </form>
-        </div>
+        <form class="contact-form" action="https://formspree.io/f/your_id" method="POST">
+          <input type="text" name="name" placeholder="IDENTIFY (NAME)" required>
+          <input type="text" name="subject" placeholder="SUBJECT" required>
+          <textarea name="message" placeholder="MESSAGE CONTENT" rows="4" required></textarea>
+          <button type="submit">SEND TRANSMISSION</button>
+        </form>
       </div>
     </section>
   </main>
