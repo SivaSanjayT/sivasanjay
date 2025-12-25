@@ -1,33 +1,25 @@
-AOS.init({ duration: 800, once: true });
+AOS.init({ duration: 1000, once: true });
 
-// Gaming Cursor Logic
+// Cursor Follow
 const cursor = document.querySelector('.custom-cursor');
 window.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 });
 
-// Random Glitch Logic for Siva Sanjay
-const nameElement = document.querySelector('.glitch-name');
-function triggerGlitch() {
-    nameElement.classList.add('glitch-active');
-    setTimeout(() => {
-        nameElement.classList.remove('glitch-active');
-    }, 250); 
-    
-    // Delay between glitches (Long: 4 to 9 seconds)
-    const nextGlitch = Math.random() * 5000 + 4000;
-    setTimeout(triggerGlitch, nextGlitch);
+// Glitch Control
+const nameEl = document.querySelector('.glitch-name');
+function doGlitch() {
+    nameEl.classList.add('glitch-active');
+    setTimeout(() => nameEl.classList.remove('glitch-active'), 250);
+    setTimeout(doGlitch, Math.random() * 5000 + 4000); // 4-9 sec delay
 }
-triggerGlitch();
+doGlitch();
 
 // Smooth Scroll
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        if(link.hash !== "") {
-            e.preventDefault();
-            const hash = link.hash;
-            document.querySelector(hash).scrollIntoView({ behavior: 'smooth' });
-        }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
     });
 });
