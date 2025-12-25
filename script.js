@@ -1,31 +1,33 @@
-// Init AOS Animations
-AOS.init({
-  duration: 1000,
-  once: true,
+AOS.init({ duration: 1000, once: true });
+
+// Custom Cursor
+const dot = document.querySelector('.cursor-dot');
+const outline = document.querySelector('.cursor-outline');
+window.addEventListener('mousemove', (e) => {
+    dot.style.left = e.clientX + 'px';
+    dot.style.top = e.clientY + 'px';
+    outline.style.left = e.clientX + 'px';
+    outline.style.top = e.clientY + 'px';
 });
 
-// Smooth Scroll for Nav Links
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
-});
-
-// Optional: Parallax effect for cards based on mouse move
-document.addEventListener('mousemove', (e) => {
-    const cards = document.querySelectorAll('.project-card');
-    const x = (window.innerWidth / 2 - e.pageX) / 50;
-    const y = (window.innerHeight / 2 - e.pageY) / 50;
+// Random Glitch Logic
+const nameElement = document.querySelector('.glitch-name');
+function triggerGlitch() {
+    nameElement.classList.add('glitch-active');
+    setTimeout(() => {
+        nameElement.classList.remove('glitch-active');
+    }, 300); // Duration of glitch
     
-    // We only apply this to the hero to keep it subtle
-    const heroContent = document.querySelector('.hero-content');
-    if(heroContent) {
-        heroContent.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    }
+    // Random long delay between 3 to 7 seconds
+    const nextGlitch = Math.random() * 4000 + 3000;
+    setTimeout(triggerGlitch, nextGlitch);
+}
+triggerGlitch();
+
+// Smooth Scroll
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
 });
