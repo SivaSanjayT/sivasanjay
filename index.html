@@ -3,147 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>Aura | Nexus Forge Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Navigation Bar -->
+<body class="dark-mode">
   <header>
     <nav>
+      <div class="logo">Nexus Forge<span> Studios</span></div>
       <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills & Tools</a></li>
+        <li><a href="#skills">Tech Tree</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://drive.google.com/file/d1jSiVNN-OVBIcmYTip4UATs7d-R0aV6w/view?usp=drivelink" target="_blank" class="resume-btn">Resume</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <video autoplay loop muted class="video-background">
-        <source src="background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <h1>Hi there, I'm Siva Sanjay</h1>
-      <p>Game Developer with expertise in Unity and C#</p>
-      <a href="#projects" class="cta-btn">My Works</a>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m passionate about game development and have completed a course that gave me a strong foundation in creating games. I’m quick to learn new concepts, a good listener, and enjoy diving into the details of how things work. I’m also great at communicating ideas and making sure that the work I do is clear and understandable to others. With a deep interest in gaming, I’m excited to bring my skills and enthusiasm to projects that create new and exciting experiences.
-        </p>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Hi, I'm <span class="typewriter" id="typewriter"></span></h1>
+      <p>Game Programmer at HFG Entertainments</p>
+      <div class="hero-btns">
+        <a href="#projects" class="cta-btn">View My Level</a>
       </div>
-      <!-- Optional profile image
-      <div class="about-img">
-        <img src="profile.jpg" alt="Profile Image">
-      </div> -->
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <h2>About the Developer</h2>
+      <p>
+        I am a Game Programmer based in Perungalathur, working at HFG Entertainments. 
+        My setup features an <strong>RTX 4080</strong> and <strong>i9 14th gen</strong>, which I use to push the limits of Unity development. 
+        My mission is to build my own dream IP game under <strong>Nexus Forge Studios</strong>.
+      </p>
+    </div>
+  </section>
+
   <section id="projects" class="projects">
-    <h2>My Projects</h2>
+    <h2 data-aos="fade-down">Current Missions</h2>
     <div class="project-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
+      <div class="project-card" data-aos="flip-left">
         <div class="video-wrapper">
-          <video autoplay muted loop>
-            <source src="2d-game-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <video autoplay muted loop><source src="2d-game-demo.mp4" type="video/mp4"></video>
         </div>
         <h3>The Explorer</h3>
-        <p>Developed a 2D platformer game where the player must cross many hurdles and obstacles to defeat the boss and earn freedom.</p>
+        <p>A 2D platformer challenging players with boss fights.</p>
         <div class="button-group">
-          <a href="https://github.com/SivaSanjayT/2DGame" target="_blank" class="btn blue-btn">View on GitHub</a>
-          <a href="https://youtu.be/54uTe1ITH50" target="_blank" class="btn blue-btn">Watch Demo</a>
+          <a href="https://github.com/SivaSanjayT/2DGame" class="btn blue-btn">GitHub</a>
         </div>
       </div>
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="video-wrapper">
-          <video autoplay muted loop>
-            <source src="3d-runner-demo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <h3>Endless Runner</h3>
-        <p>Developed a 3D endless runner game where the player has to escape a continuously collapsing palace.</p>
-        <div class="button-group">
-          <a href="https://github.com/SivaSanjayT/3DRunner" target="_blank" class="btn blue-btn">View on GitHub</a>
-          <a href="https://youtu.be/your_youtube_link" target="_blank" class="btn blue-btn">Watch Demo</a>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="video-wrapper">
-          <video autoplay muted loop>
-            <source src="fps-game-demo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <h3>FPS Research Escape</h3>
-        <p>Developed a 3D FPS game with challenging puzzles and obstacles, where players escape a complex research facility.</p>
-        <div class="button-group">
-          <a href="https://github.com/SivaSanjayT/FPSGame" target="_blank" class="btn blue-btn">View on GitHub</a>
-          <a href="https://youtu.be/your_youtube_link" target="_blank" class="btn blue-btn">Watch Demo</a>
-        </div>
-      </div>
-      <!-- Add more cards as needed. -->
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="skills">
-    <h2>Skills & Tools</h2>
+    <h2 data-aos="fade-up">Tech Tree</h2>
     <div class="skills-grid">
-      <div class="skill-card">
-        <img src="unity-icon.png" alt="Unity" />
-        <h3>Unity</h3>
-      </div>
-      <div class="skill-card">
-        <img src="csharp-icon.png" alt="C#" />
-        <h3>C#</h3>
-      </div>
-      <div class="skill-card">
-        <img src="photoshop-icon.png" alt="Photoshop" />
-        <h3>Photoshop</h3>
-      </div>
-      <div class="skill-card">
-        <img src="blender-icon.png" alt="Blender" />
-        <h3>Blender</h3>
-      </div>
+      <div class="skill-card" data-aos="zoom-in"><h3>Unity (60%)</h3></div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100"><h3>Maya (40%)</h3></div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200"><h3>Blender (20%)</h3></div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300"><h3>C# (10%)</h3></div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <div class="contact-info">
-      <p>Feel free to reach out to me for any collaboration or work opportunities.</p>
-      <address>
-        Address: 24/72, 1st street Kamaraj colony, Kodambakkam, Chennai - 600024<br>
-        Mobile: <a href="tel:+917904179747">+91 7904179747</a><br>
-        Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a>
-      </address>
+      <p>Email: <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
     </div>
-    <!-- Optionally add a contact form here -->
   </section>
 
   <footer>
-    &copy; 2025 Siva Sanjay. All Rights Reserved.
+    &copy; 2025 Aura | Nexus Forge Studios. All rights reserved.
   </footer>
 
-  <!-- JS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
