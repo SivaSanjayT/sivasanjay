@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Broken Palace — a 3D endless runner built in Unity | Siva Sanjay</title>
+  <meta name="description" content="Case study: Broken Palace, a 3D third-person endless runner in Unity and C# — collapsing palace corridors, pooled level segments, and a chase camera that keeps the fear readable.">
+  <link rel="canonical" href="https://sivasanjayt.github.io/sivasanjay/projects/broken-palace/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Broken Palace — a 3D endless runner built in Unity">
+  <meta property="og:description" content="A palace that collapses under you while you run. Built in Unity and C#.">
+  <meta property="og:image" content="https://sivasanjayt.github.io/sivasanjay/images/posters/broken-palace.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../project.css">
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="../../index.html">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          Siva Sanjay <span>· game developer</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#experience">Experience</a></li>
+          <li><a href="../../index.html#work">Work</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-cta" href="mailto:tsivasanjay@gmail.com?subject=Hello%20Siva">
+          <span class="dot" aria-hidden="true"></span> Open to work
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <header class="case-hero">
+        <a class="back-link" href="../../index.html#work"><span class="arrow" aria-hidden="true">←</span> All work</a>
+        <span class="eyebrow">Personal project · 3D endless runner</span>
+        <h1 class="case-title">Broken Palace</h1>
+        <p class="case-logline">
+          A palace that is actively coming down around you, a corridor full of fire, and a camera
+          that won't let you look away from what's behind.
+        </p>
+
+        <div class="case-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=nbySOXS1XUM" target="_blank" rel="noopener">Watch the demo ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/SivaSanjayT/3D_Endless_Runner" target="_blank" rel="noopener">Source on GitHub ↗</a>
+        </div>
+
+        <dl class="meta-strip">
+          <div><dt>Role</dt><dd>Design &amp; programming</dd></div>
+          <div><dt>Engine</dt><dd>Unity</dd></div>
+          <div><dt>Language</dt><dd>C#</dd></div>
+          <div><dt>Type</dt><dd>3D third-person endless runner</dd></div>
+          <div><dt>Status</dt><dd>Playable build + demo</dd></div>
+        </dl>
+      </header>
+
+      <div class="case-body">
+        <div class="case-layout">
+          <div class="case-main">
+            <div class="video-frame" data-video-frame>
+              <video preload="none" poster="../../images/posters/broken-palace.jpg" playsinline>
+                <source src="../../videos/broken-palace.mp4" type="video/mp4">
+              </video>
+              <button class="play-button" type="button" aria-label="Play the gameplay demo">
+                <span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+                <span class="label">Play the demo · 1:45</span>
+              </button>
+            </div>
+            <p class="video-caption">
+              One uninterrupted run from the build — including the part where the floor stops
+              being a floor.
+            </p>
+
+            <section class="case-section">
+              <h2><span class="num">01</span>The idea</h2>
+              <p>
+                Endless runners usually fail in one of two ways: nothing changes, or everything
+                changes too fast to read. I wanted the level itself to be the pressure — the palace
+                collapsing is the timer, so you never need a countdown on screen.
+              </p>
+              <p>
+                That gave me a design rule I still use: every obstacle has to be readable from at
+                least a second away. If you can't see it coming, it isn't difficulty, it's luck.
+              </p>
+            </section>
+
+            <section class="case-section">
+              <h2><span class="num">02</span>What's actually in the build</h2>
+              <ul>
+                <li>A corridor that never ends because it recycles: segments are pooled and reused
+                  ahead of the player, so the run keeps producing new floor without a loading
+                  screen or a frame drop.</li>
+                <li>Obstacles that ask three different questions — fallen columns you dodge, burning
+                  debris you go around, and gaps where the floor gives way under your feet.</li>
+                <li>A third-person chase camera tuned so the collapse stays visible in frame without
+                  stealing the space you need to react.</li>
+                <li>Score and high score that survive a restart, because a runner without a number
+                  to beat is just walking.</li>
+                <li>A clean pause flow — resume, restart, main menu — so breaking a good run doesn't
+                  mean killing the app.</li>
+                <li>Atmosphere doing the heavy lifting: wrought-iron fences, fire along both walls,
+                  fog, and mountains that exist purely so the corridor feels like it's somewhere.</li>
+              </ul>
+            </section>
+
+            <section class="case-section">
+              <h2><span class="num">03</span>What broke first</h2>
+              <!-- VERIFY: same deal — replace with your real three if these aren't the ones. -->
+              <p>Three things fought me, in this order:</p>
+              <ul>
+                <li><strong>Hitching when new floor spawned.</strong> Instantiating a segment mid-run
+                  is a stutter you can feel, and in a game about speed a stutter reads as unfair.
+                  Pooling the segments and spawning them out of view fixed it.</li>
+                <li><strong>A camera that was too brave.</strong> Close behind the character looked
+                  cinematic until the first gap — by the time you saw it, you were in it. Pulling
+                  back and raising the angle cost a little drama and bought back fairness.</li>
+                <li><strong>Too much fire.</strong> The first version lit everything, which meant
+                  nothing stood out. Taking fire off the safe path and keeping it on the hazards
+                  turned the lighting into a wayfinding tool.</li>
+              </ul>
+              <blockquote class="pull-quote">
+                Lighting is a UI element. If the bright things are the dangerous things, players
+                learn your level without reading a word.
+              </blockquote>
+            </section>
+
+            <section class="case-section">
+              <h2><span class="num">04</span>What I'd do next</h2>
+              <ul>
+                <li>Pickups placed near the edge of safety, so risk has a reward attached to it.</li>
+                <li>Three or four palace zones that change the lighting and the obstacle mix, so a
+                  long run has chapters.</li>
+                <li>A difficulty curve driven by obstacle density rather than raw speed — speed alone
+                  just removes reaction time.</li>
+                <li>A run summary: distance, best stretch, and exactly where it ended.</li>
+              </ul>
+            </section>
+
+            <section class="case-section">
+              <h2><span class="num">05</span>Frames</h2>
+              <div class="gallery">
+                <figure>
+                  <img src="../../images/screenshots/broken-palace-2.jpg" alt="A fallen granite column blocking a palace walkway" loading="lazy" width="1280" height="720">
+                  <figcaption>Fallen columns force a side-step at speed — no jumping required.</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../images/screenshots/broken-palace-3.jpg" alt="The walkway collapsing into fire beneath the runner" loading="lazy" width="1280" height="720">
+                  <figcaption>The floor gives way. This is the whole game in one frame.</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../images/screenshots/broken-palace-4.jpg" alt="The runner sprinting down a burning corridor with fire on both sides" loading="lazy" width="1280" height="720">
+                  <figcaption>Fire on the walls, fog past the fences — the corridor reads as a place.</figcaption>
+                </figure>
+                <figure>
+                  <img src="../../images/posters/broken-palace.jpg" alt="The start of the bridge with wrought-iron fences and fire on both sides" loading="lazy" width="1280" height="720">
+                  <figcaption>Opening stretch: nothing to dodge yet, so you can learn the camera.</figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+
+          <aside class="case-aside">
+            <h3>At a glance</h3>
+            <dl class="spec-list">
+              <div><dt>Role</dt><dd>Design, programming</dd></div>
+              <div><dt>Engine</dt><dd>Unity</dd></div>
+              <div><dt>Language</dt><dd>C#</dd></div>
+              <div><dt>Genre</dt><dd>3D endless runner</dd></div>
+              <div><dt>Team</dt><dd>Solo</dd></div>
+            </dl>
+            <p class="aside-note">
+              The demo on YouTube is a full uninterrupted run — score UI, restart flow and all.
+            </p>
+          </aside>
+        </div>
+      </div>
+
+      <nav class="next-nav" aria-label="More projects">
+        <a class="next-card" href="../facility-zero/index.html"><span class="label">Next project</span><b>Facility Zero →</b></a>
+        <a class="next-card" href="../the-explorer/index.html"><span class="label">Also</span><b>The Explorer →</b></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span data-year>2026</span> Siva Sanjay. Built by hand, no template.</p>
+      <div class="footer-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#work">All work</a>
+        <a href="mailto:tsivasanjay@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

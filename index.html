@@ -1,134 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siva Sanjay | Nexus Forge Studios</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Siva Sanjay — Unity Developer &amp; Gameplay Programmer</title>
+  <meta name="description" content="Unity gameplay programmer in Chennai. Two years shipping mobile games, 100+ puzzles and mini-games built, and an unannounced retail sim in development.">
+  <meta name="author" content="Siva Sanjay">
+  <link rel="canonical" href="https://sivasanjayt.github.io/sivasanjay/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Siva Sanjay — Unity Developer &amp; Gameplay Programmer">
+  <meta property="og:description" content="Gameplay programmer in Chennai. Mobile games in Unity and C#, 100+ puzzles and mini-games, and a retail sim in development.">
+  <meta property="og:url" content="https://sivasanjayt.github.io/sivasanjay/">
+  <meta property="og:image" content="https://sivasanjayt.github.io/sivasanjay/images/posters/broken-palace.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Siva Sanjay",
+    "jobTitle": "Unity Developer",
+    "image": "https://sivasanjayt.github.io/sivasanjay/images/profile.jpg",
+    "email": "mailto:tsivasanjay@gmail.com",
+    "url": "https://sivasanjayt.github.io/sivasanjay/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/sivasanjayt",
+      "https://github.com/SivaSanjayT"
+    ],
+    "knowsAbout": ["Unity", "C#", "Gameplay programming", "Mobile game development"]
+  }
+  </script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </head>
-<body class="dark-theme">
-  <div id="loader-wrapper">
-    <div class="boot-text">INITIALIZING_NEXUS_FORGE_PROTOCOL...</div>
-    <div class="loader-logo glitch-name" data-text="NEXUS FORGE">NEXUS FORGE</div>
-  </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="custom-cursor"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="#top" aria-label="Siva Sanjay, back to top">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          Siva Sanjay <span>· game developer</span>
+        </a>
 
-  <header>
-    <nav class="nav-container">
-      <div class="logo">NEXUS<span class="forge-neon" id="forge-logo">FORGE</span></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#status">Status</a></li>
-        <li><a href="#projects">Missions</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-cta" href="mailto:tsivasanjay@gmail.com?subject=Hello%20Siva">
+          <span class="dot" aria-hidden="true"></span> Open to work
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
   </header>
 
-  <main class="content-wrapper">
-    <section class="hero" id="home">
-      <div class="hero-center">
-        <h1 class="glitch-name" id="main-name" data-text="SIVA SANJAY">SIVA SANJAY</h1>
-        <div class="availability-highlight">● OPEN FOR WORK</div>
-        <p class="subtitle">Game Programmer | Unity & C# Specialist</p>
-        <p class="experience-badge">1+ Year Professional Experience</p>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true">
+        <video data-hero-video muted loop playsinline preload="metadata" poster="images/posters/broken-palace.jpg" tabindex="-1">
+          <source src="videos/hero-loop.mp4" type="video/mp4">
+        </video>
       </div>
-    </section>
 
-    <section id="status" class="status-section" data-aos="fade-up">
-      <h2 class="section-title">Operational_Status</h2>
-      <div class="status-flex">
-        <div class="status-card">
-          <span class="node-label">STUDIO ENTITY</span>
-          <h4 class="white-text">NEXUS <span class="forge-neon">FORGE</span></h4>
-          <p>Lead Developer & Founder</p>
-        </div>
-        <div class="status-card highlight-border">
-          <span class="node-label">PROFESSIONAL ROLE</span>
-          <h4>Programmer @ HFG Entertainments</h4>
-          <p>Optimizing Core Mechanics & Game Systems</p>
-        </div>
-        <div class="status-card silence-node">
-          <span class="node-label">ACTIVE DEV</span>
-          <h4 class="purple-text" id="silence-glitch-text" data-text="PROJECT: SILENCE">PROJECT: SILENCE</h4>
-          <div class="looping-progress-container">
-            <div class="looping-progress-bar"></div>
-          </div>
-          <p>Advanced Character Controllers & Environmental Logic</p>
-        </div>
-      </div>
-    </section>
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unity · C# · Gameplay systems</span>
+          <h1>I build the parts of a game that <span class="accent">people feel</span>.</h1>
 
-    <section id="projects" class="projects">
-      <h2 class="section-title" data-aos="fade-down">Project_Logs</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="video-container">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="2d-game-demo.mp4" type="video/mp4">
-            </video>
+          <p class="hero-lede">
+            I'm a gameplay programmer in Chennai. For the last two years I've been shipping mobile
+            games in Unity and C# — the systems, the puzzles, the SDKs that fight you, and the
+            frame-rate problems nobody else wants to own.
+          </p>
+
+          <div class="availability">
+            <span class="pulse" aria-hidden="true"></span>
+            Open to work — gameplay / Unity programmer
           </div>
-          <div class="card-info">
-            <h3>The Explorer</h3>
-            <p>2D platformer featuring custom boss AI.</p>
-            <a href="https://youtu.be/54uTe1ITH50" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#work">See my work <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="Siva_Sanjay_Unity_Developer_Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-ghost" href="mailto:tsivasanjay@gmail.com?subject=Hello%20Siva">Email me</a>
+          </div>
+
+          <div class="socials">
+            <a class="social-link social-link--linkedin" href="https://www.linkedin.com/in/sivasanjayt" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21H9z"/></svg>
+              LinkedIn
+            </a>
+            <a class="social-link social-link--github" href="https://github.com/SivaSanjayT" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="social-link social-link--youtube" href="https://www.youtube.com/@sivasanjayt" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2c-.2-1-.9-1.8-1.9-2C17.9 4.7 12 4.7 12 4.7s-5.9 0-7.7.5c-1 .2-1.7 1-1.9 2C1.9 9 1.9 12 1.9 12s0 3 .5 4.8c.2 1 .9 1.8 1.9 2 1.8.5 7.7.5 7.7.5s5.9 0 7.7-.5c1-.2 1.7-1 1.9-2 .5-1.8.5-4.8.5-4.8s0-3-.5-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+              YouTube
+            </a>
           </div>
         </div>
-        <div class="project-card">
-          <div class="video-container">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="3d-runner-demo.mp4" type="video/mp4">
-            </video>
+
+        <div class="hero-side">
+          <div class="portrait">
+            <div class="portrait-stage">
+              <span class="portrait-glow" aria-hidden="true"></span>
+              <span class="portrait-arc" aria-hidden="true"></span>
+              <img class="portrait-cut" src="images/profile-cutout.png" alt="Siva Sanjay" width="428" height="422" fetchpriority="high">
+            </div>
+            <p class="portrait-note">
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" style="fill:currentColor;flex:0 0 auto"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              Chennai, Tamil Nadu · open to remote
+            </p>
           </div>
-          <div class="card-info">
-            <h3>Endless Runner</h3>
-            <p>3D high-speed escape logic.</p>
-            <a href="https://www.youtube.com/watch?v=nbySOXS1XUM" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="video-container">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="fps-game-demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-info">
-            <h3>Research Escape</h3>
-            <p>FPS puzzle-action mechanics.</p>
-            <a href="https://www.youtube.com/watch?v=y6Q-Pk1pF6A" target="_blank" class="neon-btn"><i class="fab fa-youtube"></i> WATCH DEMO</a>
+
+          <div class="now">
+            <span class="tag-dot" aria-hidden="true"></span>
+            <p><b>Now building:</b> an unannounced retail sim at Primeva Entertainment.
+              <a class="arrow-link" href="projects/store-project/index.html">Read what I can say <span class="arrow" aria-hidden="true">→</span></a>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <div class="contact-box" data-aos="zoom-in">
-        <div class="contact-details">
-          <h2 class="section-title">Contact_Terminal</h2>
-          <div class="contact-links">
-            <p><i class="fas fa-envelope"></i> <a href="mailto:tsivasanjay@gmail.com">tsivasanjay@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank">sivasanjayt</a></p>
+    <div class="wrap">
+      <div class="stats" data-reveal>
+        <div class="stat"><b>2+</b><span>Years in production</span></div>
+        <div class="stat"><b>15+</b><span>Games shipped</span></div>
+        <div class="stat"><b>100+</b><span>Puzzles &amp; mini-games</span></div>
+        <div class="stat"><b>3</b><span>Personal projects</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2 class="section-title">A programmer who likes the messy middle</h2>
           </div>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/mqezrzgg" method="POST">
-          <input type="text" name="name" placeholder="IDENTIFY (NAME)" required>
-          <input type="text" name="subject" placeholder="SUBJECT" required>
-          <textarea name="message" placeholder="MESSAGE CONTENT" rows="4" required></textarea>
-          <button type="submit">SEND TRANSMISSION</button>
-        </form>
+
+        <div class="about-grid">
+          <div class="prose" data-reveal>
+            <p>
+              I'm a Unity developer based in Chennai. Most of my work lives in the middle of a
+              game's life — after the idea, before the polish, where a mechanic either holds up
+              under a hundred playtests or quietly falls apart.
+            </p>
+            <p>
+              At <strong>HFG Entertainments</strong> I spent a year and a half on mobile titles:
+              gameplay systems, puzzle and mini-game design, third-party SDKs that never behave,
+              and the profiling that keeps a game running on phones that were never built for it.
+              Fifteen games shipped, and somewhere past a hundred puzzles and mini-games along the way.
+            </p>
+            <p>
+              My own projects are where I chase the systems I don't know how to build yet — a 2D
+              platformer, a 3D endless runner, a first-person escape game. Different genres on
+              purpose. Each one started as a question I couldn't answer on paper.
+            </p>
+            <p>
+              These days most of my time goes into something much bigger: an unannounced retail sim
+              made under my studio, <strong>Primeva Entertainment</strong>. It's the most ambitious
+              thing I've built and the least I can say about it — so there's
+              <a href="projects/store-project/index.html">a page for that</a>.
+            </p>
+            <p>
+              Away from the keyboard I throw shot put and play tennikoit. State level, a while back —
+              and still the reason I'm stubborn about reps.
+            </p>
+          </div>
+
+          <aside class="aside-card" data-reveal>
+            <h3>What I'm good at</h3>
+            <ul class="aside-list">
+              <li>Gameplay systems that stay readable once the game gets big</li>
+              <li>Getting a mobile build to a frame rate you can actually ship</li>
+              <li>Dropping a third-party SDK in without breaking everything else</li>
+              <li>Working with design, art and QA instead of around them</li>
+              <li>Finishing things — the unglamorous part most people skip</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Experience</span>
+            <h2 class="section-title">Where I've worked</h2>
+          </div>
+          <p class="section-note">
+            Two roles, one theme: ship it, then make it hold up under real players on real phones.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="role-head">
+              <h3>Game Developer</h3>
+              <span class="role-when">Oct 2024 — Mar 2026</span>
+            </div>
+            <p class="role-company">HFG Entertainments <span>· Chennai, India</span></p>
+
+            <ul class="role-list">
+              <li>Built gameplay systems, mechanics and interactive features for <strong>15+ published
+                mobile games</strong> in Unity and C#.</li>
+              <li>Designed and implemented <strong>100+ puzzles and mini-game experiences</strong>, from
+                first prototype to store release.</li>
+              <li>Integrated third-party SDKs and APIs for monetisation, analytics, authentication and
+                platform features.</li>
+              <li>Tracked down gameplay, UI and runtime bugs until they stopped happening — stability
+                first, then feel.</li>
+              <li>Profiled and optimised gameplay systems and assets for mobile: draw calls, memory,
+                load times.</li>
+              <li>Built reusable gameplay architecture so the next feature didn't start from zero,
+                and led implementation inside assigned gameplay modules.</li>
+              <li>Worked day to day with designers, artists, QA and other developers to get features
+                production-ready.</li>
+            </ul>
+
+            <div class="callout">
+              <p><strong>Highlight: Undead Island.</strong> Team lead contribution on a published
+                mobile title.</p>
+              <a class="arrow-link" href="https://play.google.com/store/apps/details?id=com.hfg.undeadisland1" target="_blank" rel="noopener">
+                Play Store <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="timeline-item is-past" data-reveal>
+            <div class="role-head">
+              <h3>3D Generalist Intern</h3>
+              <span class="role-when">Internship</span>
+            </div>
+            <p class="role-company">Rankraze <span>· Chennai, India</span></p>
+
+            <ul class="role-list">
+              <li>Built and optimised 3D assets for real-time game environments.</li>
+              <li>Worked inside production asset workflows — the part where a clean export matters
+                more than a pretty render.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Work</span>
+            <h2 class="section-title">Three games, three different problems</h2>
+          </div>
+          <p class="section-note">
+            Personal projects — plus the one I can only half talk about yet.
+          </p>
+        </div>
+
+        <article class="feature" data-reveal>
+          <div class="withheld">
+            <div>
+              <svg class="lock" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3H6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1h-1V7a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V7a3 3 0 0 1 3-3zm0 9a2 2 0 0 1 1 3.7V19h-2v-2.3A2 2 0 0 1 12 13z"/></svg>
+              <p>No screenshots yet
+                <small>Deliberate. The title, the art and the footage go public together.</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-body">
+            <span class="kicker">Now in development · Primeva Entertainment</span>
+            <h3>The Store Project</h3>
+            <p class="logline">
+              A shop you can walk into, build out, and eventually hand the keys to.
+            </p>
+            <div class="feature-meta">
+              <span class="chip chip--accent">In development</span>
+              <span class="chip">PC &amp; mobile</span>
+              <span class="chip">Targeting Q1–Q2 2027</span>
+              <span class="chip">Unity 6</span>
+            </div>
+            <div class="cta-row" style="margin-top: 22px">
+              <a class="btn btn-primary btn-small" href="projects/store-project/index.html">Read the project page <span class="arrow" aria-hidden="true">→</span></a>
+              <a class="btn btn-ghost btn-small" href="https://primevaentertainment.com" target="_blank" rel="noopener">Primeva Entertainment ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid" style="margin-top: clamp(20px, 3vw, 32px)">
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <img src="images/posters/the-explorer.jpg" alt="The Explorer: a hooded character with a sword standing on ledges in a rain-soaked night jungle" width="1280" height="720" loading="lazy">
+              <span class="badge">2D platformer</span>
+            </div>
+            <div class="project-body">
+              <h3>The Explorer</h3>
+              <p class="project-hook">
+                A rainy jungle at night, a sword, and ledges that move under your feet while you
+                line up the next jump.
+              </p>
+              <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">2D</span>
+                <span class="tag">Boss AI</span>
+              </div>
+              <div class="card-actions">
+                <a class="arrow-link stretched" href="projects/the-explorer/index.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="arrow-link arrow-link--muted" href="https://youtu.be/54uTe1ITH50" target="_blank" rel="noopener">Watch demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <img src="images/posters/broken-palace.jpg" alt="Broken Palace: a runner dropping through a collapsed walkway above fire, with the palace collapsing around them" width="1280" height="720" loading="lazy">
+              <span class="badge">3D endless runner</span>
+            </div>
+            <div class="project-body">
+              <h3>Broken Palace</h3>
+              <p class="project-hook">
+                The palace is coming down behind you. The useful question isn't how far you've
+                run — it's whether the floor is still there.
+              </p>
+              <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">3D</span>
+                <span class="tag">Score systems</span>
+              </div>
+              <div class="card-actions">
+                <a class="arrow-link stretched" href="projects/broken-palace/index.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="arrow-link arrow-link--muted" href="https://www.youtube.com/watch?v=nbySOXS1XUM" target="_blank" rel="noopener">Watch demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <img src="images/posters/facility-zero.jpg" alt="Facility Zero: a white corridor inside a research facility with blood on the floor and a sealed bulkhead" width="1280" height="720" loading="lazy">
+              <span class="badge">First-person escape</span>
+            </div>
+            <div class="project-body">
+              <h3>Facility Zero</h3>
+              <p class="project-hook">
+                Find the codes. Keep the flashlight on. Get out — and try not to think about why
+                the lights are already off.
+              </p>
+              <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">First-person</span>
+                <span class="tag">Puzzle</span>
+              </div>
+              <div class="card-actions">
+                <a class="arrow-link stretched" href="projects/facility-zero/index.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+                <a class="arrow-link arrow-link--muted" href="https://www.youtube.com/watch?v=y6Q-Pk1pF6A" target="_blank" rel="noopener">Watch demo ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Skills</span>
+            <h2 class="section-title">What I work with</h2>
+          </div>
+          <p class="section-note">
+            The short version: Unity, C#, and a lot of patience for the boring parts.
+          </p>
+        </div>
+
+        <div class="skill-columns" data-reveal>
+          <div class="skill-group">
+            <h3>Unity &amp; gameplay</h3>
+            <ul>
+              <li>Unity 3D</li>
+              <li>Gameplay programming</li>
+              <li>Gameplay systems</li>
+              <li>Puzzle &amp; mini-game design</li>
+              <li>Mobile game development</li>
+              <li>WebGL prototyping</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Code</h3>
+            <ul>
+              <li>C#</li>
+              <li>Object-oriented design</li>
+              <li>Debugging &amp; troubleshooting</li>
+              <li>Performance optimisation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Integration</h3>
+            <ul>
+              <li>SDK / API integration</li>
+              <li>Monetisation &amp; analytics</li>
+              <li>Authentication &amp; platform features</li>
+              <li>2D / 3D asset workflows</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Working with people</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Design, art &amp; QA collaboration</li>
+              <li>Feature ownership</li>
+              <li>Clear documentation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tools">
+          <p class="tool-label">Tools I use daily</p>
+          <div class="tool-row" data-reveal>
+            <span class="tool"><img src="images/unity-logo.png" alt="" width="36" height="36" loading="lazy">Unity</span>
+            <span class="tool"><img src="images/csharp-logo.png" alt="" width="36" height="36" loading="lazy">C#</span>
+            <span class="tool"><img src="images/blender-logo.png" alt="" width="36" height="36" loading="lazy">Blender</span>
+            <span class="tool"><img src="images/maya-icon.png" alt="" width="36" height="36" loading="lazy">Maya</span>
+            <span class="tool"><img src="images/photoshop-icon.png" alt="" width="36" height="36" loading="lazy">Photoshop</span>
+            <span class="tool"><img src="images/premiere-pro-icon.png" alt="" width="36" height="36" loading="lazy">Premiere Pro</span>
+            <span class="tool"><img src="images/after-effects-icon.png" alt="" width="36" height="36" loading="lazy">After Effects</span>
+            <span class="tool"><img src="images/GitHUB-icon.png" alt="" width="36" height="36" loading="lazy">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Background</span>
+            <h2 class="section-title">Where I learned it</h2>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <article class="info-card" data-reveal>
+            <span class="when">Mar 2023 — Aug 2024</span>
+            <h3>C.Tech Higher Certificate in Game Design</h3>
+            <p>Image Creative Education · Chennai</p>
+            <span class="grade">Grade: Very Good</span>
+          </article>
+
+          <article class="info-card" data-reveal>
+            <span class="when">2020 — 2023</span>
+            <h3>B.Sc. Visual Communication</h3>
+            <p>SRM Institute of Science and Technology · Chennai</p>
+          </article>
+
+          <article class="info-card" data-reveal>
+            <span class="when">2017 — 2018</span>
+            <h3>Sport, briefly serious</h3>
+            <p>State-level 3rd place in shot put. Zonal, district and division winner in tennikoit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">Let's talk</h2>
+          </div>
+          <p class="section-note">
+            Open to gameplay programming and Unity roles — remote, hybrid, or in Chennai.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div data-reveal>
+            <div class="prose">
+              <p>
+                If you're building something and think I'd be useful, my inbox is open. I answer
+                everything — job offers, contract work, and the occasional "how did you do that
+                collapse effect" email.
+              </p>
+            </div>
+
+            <div class="contact-list">
+              <button type="button" data-copy="tsivasanjay@gmail.com" aria-label="Copy email address tsivasanjay at gmail dot com">
+                <svg viewBox="0 0 24 24" class="brand-icon--mail" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.6 7h14.8L12 12.2zM4 9.4V17h16V9.4l-7.4 5a1 1 0 0 1-1.2 0L4 9.4z"/></svg>
+                <span>
+                  <span class="label">Email · click to copy</span>
+                  <span class="value" data-copy-label>tsivasanjay@gmail.com</span>
+                </span>
+              </button>
+
+              <a href="https://www.linkedin.com/in/sivasanjayt" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" class="brand-icon--linkedin" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21H9z"/></svg>
+                <span>
+                  <span class="label">LinkedIn</span>
+                  <span class="value">linkedin.com/in/sivasanjayt</span>
+                </span>
+              </a>
+
+              <a href="https://github.com/SivaSanjayT" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" class="brand-icon--github" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                <span>
+                  <span class="label">GitHub</span>
+                  <span class="value">github.com/SivaSanjayT</span>
+                </span>
+              </a>
+
+              <a href="Siva_Sanjay_Unity_Developer_Resume.pdf" download>
+                <svg viewBox="0 0 24 24" class="brand-icon--mail" aria-hidden="true"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 17l-5.7-6.7 1.4-1.4L11 12.2V3zM5 19h14v2H5z"/></svg>
+                <span>
+                  <span class="label">Résumé</span>
+                  <span class="value">Download PDF</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="https://formspree.io/f/mqezrzgg" method="POST" data-ajax>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Who's this?" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@studio.com" required>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Role, project, or hello" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="A few lines is plenty." required></textarea>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-note" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Siva Sanjay | Nexus Forge Studios</p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span data-year>2026</span> Siva Sanjay. Built by hand, no template.</p>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="projects/store-project/index.html">The Store Project</a>
+        <a href="https://primevaentertainment.com" target="_blank" rel="noopener">Primeva Entertainment</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

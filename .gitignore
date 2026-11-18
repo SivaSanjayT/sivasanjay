@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# This repository is published as a static site.
+# Anything committed here can be downloaded by anyone. Keep internal design
+# documents local until they are meant to be public.
+# ---------------------------------------------------------------------------
+*.docx
+*.doc
+*.pages
+*.key
+Store_Simulator_Master_GDD.docx
+
+# Working folders
+_frames/
+_shots/
+_src/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
